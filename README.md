@@ -1,41 +1,30 @@
-## TP CDAD 2018
+## TP NOTE CDAD 2018
 
 ### How to start
 
 First time you're starting the application, install the dependencies:
 
 ```
-docker-compose run web npm install
+npm install
 ```
 
 Then start the web server with:
 
 ```
-docker-compose up
+docker-compose restart && docker-compose up
 ```
 
 Then in the browser: [http://localhost:1337](http://localhost:1337)
 
-### TP 2
+### "Téléversement d’un fichier"
 
-After a bit of research, you should have noticed that the
-[cowsay](https://www.npmjs.com/package/cowsay) package does exactly what you need. Install it with:
+You can see the results at [http://localhost:1337/add].
 
-```
-docker-compose run web npm install cowsay
-```
+You have to enter a sentence and select a pic.
 
-Then generate the new controller and an action with:
+You'll be redirected to /say with your sentence and the pic.
 
-```
-docker-compose run web sails generate controller Cowsay say
-```
-
-Update the action code accordingly.
-
-Add the route in the `config/routes.js` file. Head to
-[http://localhost:1337/say](http://localhost:1337/say) and here you are! Let me introduce
-you to Marguerite, the talking cow.
+Have a good day :)
 
 ### Resources
 
